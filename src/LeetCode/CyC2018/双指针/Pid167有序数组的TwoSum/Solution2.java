@@ -1,7 +1,4 @@
-package LeetCode.CyC2018.双指针.有序数组的TwoSum;
-
-import java.util.HashMap;
-import java.util.Map;
+package LeetCode.CyC2018.双指针.Pid167有序数组的TwoSum;
 
 /**
  * created by popma
