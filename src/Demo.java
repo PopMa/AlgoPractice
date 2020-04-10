@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -6,18 +8,28 @@ import java.util.List;
  * created time: 2020/3/15, 10:31
  */
 public class Demo {
-    private static int getSum(List<Integer> temRes) {
-        int sum = 0;
-        for (int i : temRes) {
-            sum += i;
-        }
-        return sum;
-    }
-
     public static void main(String[] args) {
-        List<Integer> a = new ArrayList<>();
-        a.add(1);
+        LinkedList<String> link = new LinkedList<String>();
+        //添加元素
+        link.addFirst("大乔");
+        link.addFirst("小桥");
+        link.addFirst("老乔");
+        System.out.println(link);
+        // 获取元素
+        System.out.println(link.getFirst());
+        System.out.println(link.getLast());
 
-        System.out.println(getSum(a));
+        link.push("big");
+        System.out.println(link.pop());
+        // 删除元素
+//        System.out.println(link.removeFirst());
+//        System.out.println(link.removeLast());
+//
+//        while (!link.isEmpty()) { //判断集合是否为空
+//            System.out.println(link.pop()); //弹出集合中的栈顶元素
+//        }
+
+        System.out.println(link);
     }
+
 }
