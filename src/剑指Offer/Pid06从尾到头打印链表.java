@@ -12,7 +12,7 @@ import java.util.Stack;
  * created by popma
  * created time: 2020/4/5, 15:14
  */
-public class Pid从尾到头打印链表 {
+public class Pid06从尾到头打印链表 {
     static class Solution {
         public int[] reversePrint(ListNode head) {
             Stack<Integer> stack = new Stack<Integer>();

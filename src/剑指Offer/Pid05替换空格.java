@@ -7,7 +7,7 @@ package 剑指Offer;
  * 输入：s = "We are happy."
  * 输出："We%20are%20happy."
  */
-public class Pid5替换空格 {
+public class Pid05替换空格 {
     public static String replaceSpace(String s) {
         // 扩充长度
         StringBuilder str = new StringBuilder(s);

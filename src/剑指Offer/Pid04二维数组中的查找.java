@@ -1,4 +1,4 @@
-package 剑指Offer.面试题3数组中重复的数字;
+package 剑指Offer;
 
 /**
  * created by popma
@@ -25,6 +25,25 @@ package 剑指Offer.面试题3数组中重复的数字;
  */
 public class Pid04二维数组中的查找 {
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
+        int m = matrix.length;
+        if (m == 0) return false;
+        int n = matrix[0].length;
+
+        // init value
+        int row = matrix.length - 1;
+        int col = 0;
+
+        boolean res = false;
+        // binary search
+        while (row >= 0 && col < n) {
+            if (target > matrix[row][col]) {
+                col++;
+            } else if (target < matrix[row][col]) {
+                row--;
+            } else {
+                return true;
+            }
+        }
         return false;
     }
 }
