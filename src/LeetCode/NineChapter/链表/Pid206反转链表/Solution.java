@@ -25,7 +25,6 @@ public class Solution {
         while (curr != null) {
             ListNode next = curr.next;
             curr.next = prev;
-            next.next = curr;
             prev = curr;
             curr = next;
         }

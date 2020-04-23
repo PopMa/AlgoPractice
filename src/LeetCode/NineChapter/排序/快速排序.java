@@ -1,4 +1,4 @@
-package LeetCode.NineChapter.排序.快速排序;
+package LeetCode.NineChapter.排序;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
  */
 // 先大排序，再分开递归排序
 // Index的比较都<=/>= Value的比较都>/<
-public class Solution {
+public class 快速排序 {
 
     public List<Integer> sortIntegers(int[] nums) {
         if (nums == null || nums.length == 0) {
